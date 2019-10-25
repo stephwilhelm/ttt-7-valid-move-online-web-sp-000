@@ -16,7 +16,7 @@ end
 
 def valid_move?(board, index)
   if position_taken?(false)
-    board[index](int) > 0 && board[index](int) < 9 && board[index] = "O" || board[index] = "X"
+    board[index] > 0 && board[index] < 9 && board[index] = "O" || board[index] = "X"
   else
     position_taken?(true)
   end
