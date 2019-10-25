@@ -15,10 +15,13 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
+
+  move = nil
   if position_taken?(false)
     board[index] > 0 && board[index] < 9 && board[index] = "O" || board[index] = "X"
+    move = true
   else
-    position_taken?(true)
+    valid_move?(false)
   end
 
 end
